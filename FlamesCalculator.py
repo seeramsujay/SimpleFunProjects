@@ -31,9 +31,8 @@ def play_flames(name1, name2):
 
     return flames[0]
 
-# --- Quick Test ---
-p1 = input("Enter Name 1: ")
-p2 = input("Enter Name 2: ")
-result = play_flames(p1, p2)
-
-print(f"\nRelationship Result: {result}")
+if __name__ == "__main__":
+    p1 = input("Enter Name 1: ")
+    p2 = input("Enter Name 2: ")
+    result = play_flames(p1, p2)
+    print(f"\nRelationship Result: {result}")
