@@ -10,7 +10,7 @@ def play_flames(name1, name2):
             name2.remove(char)
 
     count = len(name1) + len(name2)
-    
+
     # The FLAMES categories
     flames = ["Friends", "Love", "Affection", "Marriage", "Enemy", "Siblings"]
 
@@ -19,10 +19,10 @@ def play_flames(name1, name2):
         # Calculate index to remove using modulo
         # (count - 1) because list indices start at 0
         split_index = (count % len(flames)) - 1
-        
+
         if split_index >= 0:
             # Re-slice the list so the count starts from the next item
-            right = flames[split_index + 1:]
+            right = flames[split_index + 1 :]
             left = flames[:split_index]
             flames = right + left
         else:
@@ -31,9 +31,9 @@ def play_flames(name1, name2):
 
     return flames[0]
 
-# --- Quick Test ---
-p1 = input("Enter Name 1: ")
-p2 = input("Enter Name 2: ")
-result = play_flames(p1, p2)
 
-print(f"\nRelationship Result: {result}")
+if __name__ == "__main__":
+    p1 = input("Enter Name 1: ")
+    p2 = input("Enter Name 2: ")
+    result = play_flames(p1, p2)
+    print(f"\nRelationship Result: {result}")
