@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#100b1e"/>
+      <stop offset="100%" stop-color="#1f143a"/>
+    </linearGradient>
+    <linearGradient id="neonPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <linearGradient id="arcadeYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#06d6a0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Base Badge -->
+  <rect width="500" height="500" rx="100" fill="url(#bgGrad)"/>
+  <rect width="492" height="492" x="4" y="4" rx="96" fill="none" stroke="#ff007f" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Retro CRT Scanline Frame -->
+  <rect x="90" y="110" width="320" height="280" rx="40" fill="#181130" stroke="url(#neonPink)" stroke-width="5" filter="url(#glow)"/>
+
+  <!-- Retro D-Pad Controller Shape -->
+  <path d="M 180 215 L 205 215 L 205 190 L 235 190 L 235 215 L 260 215 L 260 245 L 235 245 L 235 270 L 205 270 L 205 245 L 180 245 Z" fill="#291e4e" stroke="#06d6a0" stroke-width="3"/>
+
+  <!-- Action Arcade Buttons -->
+  <circle cx="310" cy="210" r="14" fill="#ff007f" filter="url(#glow)"/>
+  <circle cx="340" cy="245" r="14" fill="#ffd166" filter="url(#glow)"/>
+
+  <!-- Glowing Arcade Vector Sparkles -->
+  <path d="M 250 140 L 253 148 L 261 151 L 253 154 L 250 162 L 247 154 L 239 151 L 247 148 Z" fill="#ffd166"/>
+  <path d="M 130 330 L 132 336 L 138 338 L 132 340 L 130 346 L 128 340 L 122 338 L 128 336 Z" fill="#06d6a0"/>
+  <path d="M 370 330 L 372 336 L 378 338 L 372 340 L 370 346 L 368 340 L 362 338 L 368 336 Z" fill="#ff007f"/>
+
+  <!-- Pixel Scanlines Overlay -->
+  <line x1="100" y1="180" x2="400" y2="180" stroke="#ffffff" stroke-width="1" stroke-opacity="0.08"/>
+  <line x1="100" y1="250" x2="400" y2="250" stroke="#ffffff" stroke-width="1" stroke-opacity="0.08"/>
+  <line x1="100" y1="320" x2="400" y2="320" stroke="#ffffff" stroke-width="1" stroke-opacity="0.08"/>
+</svg>

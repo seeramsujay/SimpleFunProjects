@@ -1,4 +1,21 @@
-# 🎮 SimpleFunProjects: Retro CLI Interactive Entertainment Engines
+<div align="center">
+
+<img src="assets/logo.svg" alt="SimpleFunProjects Logo" width="160" />
+
+# SimpleFunProjects
+### Retro CLI Interactive Entertainment & Algorithmic Engines
+
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+[![Python: Pure Stdlib](https://img.shields.io/badge/Python-Zero%20Dependencies-success.svg)](https://python.org)
+[![Platform: Cross-Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-informational.svg)](#)
+
+<p align="center">
+  <b>A curated catalog of lightweight, zero-dependency Python terminal utilities designed for retro CLI game simulation and algorithmic entertainment.</b>
+</p>
+
+</div>
+
+---
 
 SimpleFunProjects is a curated catalog of lightweight, zero-dependency Python terminal utilities designed for retro CLI game simulation and mathematical relationship calculations. Operating entirely within the standard Python runtime, these engines demonstrate clean algorithmic design and input-driven text formatting.
 
